@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		08E6D036256B017300F1BAF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6D035256B017300F1BAF8 /* ContentView.swift */; };
 		08E6D038256B017500F1BAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E6D037256B017500F1BAF8 /* Assets.xcassets */; };
 		08E6D03B256B017500F1BAF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E6D03A256B017500F1BAF8 /* Preview Assets.xcassets */; };
+		08E6D049256B072800F1BAF8 /* KingfisherSwiftUIStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 08E6D048256B072800F1BAF8 /* KingfisherSwiftUIStatic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E6D049256B072800F1BAF8 /* KingfisherSwiftUIStatic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,9 @@
 			dependencies = (
 			);
 			name = PhotoLibrary;
+			packageProductDependencies = (
+				08E6D048256B072800F1BAF8 /* KingfisherSwiftUIStatic */,
+			);
 			productName = PhotoLibrary;
 			productReference = 08E6D030256B017300F1BAF8 /* PhotoLibrary.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 08E6D027256B017300F1BAF8;
+			packageReferences = (
+				08E6D047256B072800F1BAF8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 08E6D031256B017300F1BAF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -334,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08E6D047256B072800F1BAF8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08E6D048256B072800F1BAF8 /* KingfisherSwiftUIStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E6D047256B072800F1BAF8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUIStatic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08E6D028256B017300F1BAF8 /* Project object */;
 }
