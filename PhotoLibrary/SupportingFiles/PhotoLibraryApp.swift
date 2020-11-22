@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PhotoLibraryApp: App {
+    
     var body: some Scene {
+        let presentationFactory = PresentationFactory.build()
         WindowGroup {
-            ContentView()
+            presentationFactory.rootView()
         }
     }
+    
 }
